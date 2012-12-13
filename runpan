@@ -1,0 +1,2 @@
+#!/bin/sh
+./pandemonium irc.hwcommunity.com bottest

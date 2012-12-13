@@ -1,0 +1,18 @@
+#!/bin/sh
+
+FILES="channel.ml server.ml main.ml"
+
+LIBS="unix.cma threads.cma str.cma"
+
+OPTLIBS="unix.cmxa threads.cmxa str.cmxa"
+
+OCAMLC=ocamlc.opt
+OCAMLCP=ocamlcp
+OCAMLOPT=ocamlopt.opt
+
+OCAMLSDLLIB=`ocamlfind query sdl`
+
+
+#$OCAMLC -thread -c -g -I $OCAMLSDLLIB $LIBS $FILES 
+$OCAMLOPT -thread -c -I $OCAMLSDLLIB $OPTLIBS $FILES
+

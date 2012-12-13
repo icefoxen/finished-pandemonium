@@ -1,0 +1,16 @@
+#!/bin/sh
+
+OPTFILES="channel.cmx server.cmx main.cmx"
+
+OPTLIBS="unix.cmxa threads.cmxa str.cmxa"
+
+
+OCAMLC=ocamlc.opt
+OCAMLCP=ocamlcp
+OCAMLOPT=ocamlopt.opt
+
+OUTNAME=pandemonium
+
+
+$OCAMLOPT -thread -o $OUTNAME $OPTLIBS $OPTFILES
+

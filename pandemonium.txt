@@ -1,0 +1,12 @@
+pandemonium is a very simple yet usable IRC client.
+It is not trivial, but it is not overly complicated.
+It will probably be GUI-y, too.
+And hopefully cross-platform.
+
+
+I'm going to rewrite this to become a flexible IRC bot, I think.
+I have need of a bot, and no need of an IRC client.
+
+It is probably wisest to simply kludge the hell out of it until it works.
+Blocking mainloop, braindead message dispatch, lots of hard-coded stuff,
+the works.  The server and channel might want to be taken from a command line.
